@@ -23,13 +23,6 @@ This project:
 > Note: model files are downloaded once to Hugging Face cache by `transformers` and reused on subsequent runs.
 
 ---
-
-## Does the **local host link** (http://localhost:8501) need to be included?
-Short answer: **No, it's not required in the repo**, but the README includes instructions for running the app locally and how to access it at `http://localhost:8501` or the container host port when using Docker.  
-When deployed (e.g., on a server, cloud VM, or Streamlit Sharing), you should use the public URL provided by that host instead.
-
----
-
 ## Prerequisites
 - Python 3.10+ (3.11 recommended)
 - Git

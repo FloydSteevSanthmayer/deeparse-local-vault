@@ -1,0 +1,11 @@
+streamlit>=1.20
+pymupdf>=1.22
+transformers>=4.30.0
+torch>=2.0.0
+python-dotenv>=0.21.0
+Pillow>=9.0.0
+pytest>=7.0.0
+pre-commit
+flake8
+isort
+black

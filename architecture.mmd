@@ -1,0 +1,27 @@
+flowchart TB
+  subgraph User
+    U[User Browser]
+  end
+  subgraph Frontend
+    S[Streamlit App]
+    S --> UP[Upload PDF]
+  end
+  subgraph Extraction
+    FZ[PyMuPDF (fitz)]
+    OCR[OCR fallback (Tesseract) — optional]
+  end
+  subgraph Storage
+    CACHE[HF Cache (~/.cache/huggingface)]
+    FAISS[FAISS Index (optional)]
+  end
+  subgraph ModelRuntime
+    MODEL[Transformers Pipeline]
+  end
+  U --> S --> UP --> FZ
+  FZ -->|text| S
+  FZ -->|if no text| OCR
+  S --> MODEL
+  MODEL --> CACHE
+  S --> FAISS
+  FAISS --> MODEL
+  S --> U

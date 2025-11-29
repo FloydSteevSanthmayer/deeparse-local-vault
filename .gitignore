@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+.env
+.venv/
+venv/
+.env.local
+.env.*.local
+
+# Hugging Face
+.cache/huggingface
+__pycache__
+.hf/
+*.ipynb_checkpoints
+
+# Editor
+.vscode/
+.idea/
+.DS_Store
+
+# Test / CI
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Packages
+pip-wheel-metadata/
+dist/
+build/

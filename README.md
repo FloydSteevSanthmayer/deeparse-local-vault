@@ -100,7 +100,6 @@ snapshot_download(repo_id="deepparse/gpt-deepparse", cache_dir="/path/to/hf_cach
 ├─ architecture.mmd
 ├─ docs/
 │  ├─ flowchart_colored.png
-│  └─ architecture.png
 ├─ Dockerfile
 ├─ requirements.txt
 ├─ .env.example
